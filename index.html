@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Novaholm</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/novaholm.css"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+<header class="header">
+  <nav class="sticky-navbar">
+   <div class="header-left">
+        <a href=""><img src="./assets/logo2.png" class="logo"/></a>
+    </div>
+    <div class="header-right">
+        <div class="menu-hamburger">
+            <img src="./assets/hambLogo.png" style="width:35px;"/>
+        </div>
+        <div class="close">
+             <img src="./assets/close.png" style="width:35px;"/>
+        </div>
+        <div class="menu-items">
+            <ul>
+                <li><a class="menu-item" href="#gallery" style="border-right:none;">Gallery</a></li>
+                <li><a class="menu-item" href="#signIn">iHolm Sign In</a></li>
+                <li><a class="menu-item" href="#inquiry">Inquiry form</a></li>
+            </ul>
+        </div>
+    </div>
+ 
+    <div class="mobile-menu">
+        <div style="margin-top:100px;">
+            <ul>
+                <a class="menu_item" href="#inquiry"><li style="margin-bottom:20px">INQUIRY FORM</li></a>
+                <a class="menu_item" href="#signIn"><li style="margin-bottom:20px">IHOLM SIGN IN</li></a>
+                <a class="menu_item" href="#gallery"><li style="margin-bottom:20px">GALLERY</li></a>
+            </ul> 
+        </div>
+    </div>
+  </nav>
+</header>  
+
+
+<div class="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100 pictures" src="./assets/raba1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100 pictures" src="./assets/raba2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100 pictures" src="./assets/raba3.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div class="introContainer">
+    <div class="title">Welcome to Novaholm</div>
+    <div class="description">
+        Choose your path wether you want to contact with us using our Inquiry Form or access our service application of iHolm.
+    </div>
+</div>
+
+<div class="vLineMob" style="margin-top:60px;"></div>
+
+<div class="inquiryContainer" id="inquiry">
+    <div class="inquiryTitle">Inquiry Form</div>
+    <div class="inquiryDisc">Please fill up inquiry form for information and support puprposes.</div>
+    
+    <form class="form">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="labelTitle">First name:</label>
+                    <input type="firstName" class="form-control" id="inputFirstName" aria-describedby="firstNameHelp" placeholder="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="labelTitle">Last name:</label>
+                    <input type="lastName" class="form-control" id="inputlastName" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="labelTitle">E-mail:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="">
+        </div>
+        <div class="form-group">
+            <label class="labelTitle">Company name:</label>
+            <input type="company" class="form-control" id="inputCompany" placeholder="">
+        </div>
+        <div class="form-group">
+            <label class="labelTitle">Address:</label>
+            <input type="address" class="form-control" id="inputAddress" placeholder="">
+        </div>
+       <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="labelTitle">Country:</label>
+                    <input type="country" class="form-control" id="inputCountry" placeholder="Estonia">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="labelTitle">City:</label>
+                    <input type="town" class="form-control" id="inpuTown" placeholder="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="labelTitle">Postal code:</label>
+                    <input type="postalCode" class="form-control" id="inputPostal" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="form-group mobileForm">
+            <label class="labelTitle">Mobile phone number:</label>
+            <div class="input-group form-group" style="margin-top:1px;">
+                <div class="input-group-prepend">
+                    <!-- <img src="../assets/flag.png" class="flagFavicion"/> -->
+                    <input  class="targetNr" type="targetNr" id="targetNr" placeholder="+ 372">
+                </div> 
+                <input type="text" class="form-control" id="inputMobile" placeholder="">
+            </div>
+             <small id="emailHelp" class="fontSize" style="margin-top: -15px;">Your phone number ensures we are able to provide you valuable information and support more quickly.</small>
+            </div>
+
+        <div class="form-group" style="margin-top: 17px;">
+            <textarea class="form-control" id="inputTextarea" rows="3" type="textArea" placeholder="Insert yout message here" style="height: 70px;"></textarea>
+        </div>
+        <button type="submit" class="submitBtn"><p class="submitBtnFont">Submit Forms</p></button>
+    </form>
+</div>
+
+
+<div class="vLineMob" style="margin-top:60px;"></div>
+
+<div class="signIn" id="signIn">
+    <div class="signInTitle">Sign In</div>
+    <div class="signInDesc">Sign in for iHolm services</div>
+    <form>
+        <div class="signInContainer">
+            <div class="form-group">
+                <label class="labelTitle">Username:</label>
+                <input class="signInForm" placeholder="" type="userName" id ="inputUsername" required>
+            </div>
+            <div class="form-group" style="margin-top:-20px;">
+                <label class="labelTitle" style="margin-top:10px;">Password:</label>
+                <input class="signInForm" type="password" placeholder="" name="psw" id ="inputPsw" required>
+            </div>
+            <label class="checkContainer">
+                <input type="checkbox" checked="checked">
+                    Remember me on this device
+                <span class="checkmark"></span>
+            </label>
+           
+            <p class="privacyDes">I have read and agreed to the <a href="" class="privacyLink">Privacy Policy</a></p>
+            <a href=""><p class="forgot">Forgot password?</p></a>
+
+            <button class="signInBtn"><p class="signInBtnFont">Sign in</p></button>
+        </div>
+    </form>
+</div>
+
+
+<div class="vLineMob" style="margin-top:60px;"></div>
+
+
+
+<div class="mob-gallery" id="gallery">
+    <div class="galleryTitle">Gallery</div>
+    <div class="galleryDesc">Full acess to the Gallery is available for iHolm users</div>
+    <div class="row imgLine" style="margin:0 auto;">
+        <div class="column">
+            <img src="./assets/raba3.jpg" alt="Nature" style="width:100%" onclick="currentSlide(1)" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./assets/raba4.jpg" alt="Snow" style="width:100%" onclick="currentSlide(2)" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./assets/raba6.jpg" alt="Mountains" style="width:100%" onclick="currentSlide(3)" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./assets/raba1.jpg" alt="Lights" style="width:100%" onclick="currentSlide(4)"onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="./assets/raba1.jpg" alt="Lights" style="width:100%" onclick="currentSlide(5)"onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="imgContainer">
+        <div class="mySlides">
+            <img id="expandedImg" alt="katse" src="./assets/raba3.jpg" class="expendedImg">
+            <div id="imgtext"></div>
+        </div>
+        <div class="mySlides">
+            <img src="./assets/raba4.jpg" style="width:100%" class="expendedImg" >
+        </div>
+        <div class="mySlides">
+            <img src="./assets/raba6.jpg" style="width:100%" class="expendedImg">
+        </div>
+        <div class="mySlides">
+            <img src="./assets/raba1.jpg" style="width:100%" class="expendedImg">
+        </div>
+        <div class="mySlides">
+            <img src="./assets/raba1.jpg" style="width:100%" class="expendedImg">
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+
+<div class="footer">
+    <div class="footerTitle">Contact us</div>
+    <div class="containerInfo">
+         <div class="rowLine">
+        <!--   <div class="col-lg-3">
+                <div class="footerLogo">
+                    <img src="../assets/roheline.png" width="170" height="150">
+                </div>
+            </div> -->
+            <div class="col- footer-items">
+                <div class="row footer-items-row">
+                    <div class="col line">Address: 
+                        <div class="col ">Narva Road 22 Suite 9, 10120 Tallinn, Estonia</div>
+                    </div>
+                    <div class="col- line"> Phone: 
+                        <div class="col">+372 644 0613</div>
+                    </div>
+                    <div class="col- line">Fax:
+                        <div class="col ">+372 644 0615</div>
+                    </div>
+                    <div class="col- line" style="border-right:none;"> E-mail: 
+                        <div class="col">info@novaholm.ee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer2">
+    <div class="footerTitle">Contact us</div>
+    <div class="containerInfo">
+        <div class="row">
+            <div class="col-md line"><p class="footerSubTitle">Address:</p>
+                <div class="col footerSubLine">Narva Road 22 Suite 9, 10120 Tallinn, Estonia</div>
+            </div>
+            <div class="col-md line"><p class="footerSubTitle">Phone:</p>
+                <div class="col footerSubLine">+372 644 0613</div>
+            </div>
+            <div class="col-md line"><p class="footerSubTitle">Fax:</p>
+                <div class="col footerSubLine ">+372 644 0615</div>
+            </div>
+            <div class="col-md line" style="border-right:none;"><p class="footerSubTitle">E-mail:</p>
+                <div class="col footerSubLine">info@novaholm.ee</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+
+$('.menu-hamburger').on('click', function(){
+    $('.mobile-menu').slideDown();
+    $('.menu-hamburger').css('display', 'none');
+    $('.close').css('display', 'block');
+})
+
+$('.close').on('click', function(){
+    $('.mobile-menu').slideUp();
+    $('.close').css('display', 'none');
+    $('.menu-hamburger').css('display', 'block');
+})
+
+$('.menu_item').on('click', function(){
+  $('.mobile-menu').hide()
+  $('.close').hide()
+  $('.menu-hamburger').show()
+  $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top -100
+    }, 1000);
+    return false;
+})
+
+$('.menu-item').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top -100
+    }, 1000);
+    return false;
+});
+
+
+
+$(window).on('hashchange', function(e){
+    history.replaceState ("", document.title, e.originalEvent.oldURL);
+});
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+  /*imgText.parentElement.style.display = "block"; */
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
