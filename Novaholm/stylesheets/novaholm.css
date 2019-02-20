@@ -264,6 +264,11 @@ li a {
     border-radius: 4px;
 }
 
+.submitBtn:hover{
+    outline:none;
+    box-shadow: none;
+}
+
 .submitBtnFont{
     margin-top:-5px;
 }
@@ -393,6 +398,13 @@ button {
 
 button:hover {
   opacity: 0.8;
+  outline: none;    
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+}
+button:focus{ 
+    outline: none;
+    box-shadow: none;
 }
 
 .privacyLink{
@@ -442,6 +454,11 @@ button:hover {
     width:50%;
     display:block;
     height:40px;
+}
+
+.signInBtn:hover{
+    outline:none;
+    box-shadow: none;
 }
 
 .signInBtnFont{
