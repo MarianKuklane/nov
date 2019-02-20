@@ -243,6 +243,10 @@ li a {
     border-bottom-right-radius: 0;
     margin-left:-1px;
     padding: 9px;
+    background: transparent;
+    outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .submitBtn{
