@@ -361,6 +361,9 @@ li a {
     border: 1px solid #ced4da;
     box-sizing: border-box;
     border-radius: .25rem;
+    outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .signInContainer{
