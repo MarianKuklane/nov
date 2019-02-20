@@ -1286,3 +1286,13 @@ input:required:invalid {
     outline: none;
 }
 }
+
+
+@-moz-document url-prefix() {
+.footerSubTitle{
+    font-weight: 600;
+    margin-top: -10px;
+    font-size:16px;
+}
+.footerSubLine{font-weight: 100;}
+}  
