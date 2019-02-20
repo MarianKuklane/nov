@@ -224,12 +224,13 @@ li a {
 }
 
 .input-group-prepend {
-    margin-right: -1px;
+    margin-right: -2px;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    /*border-radius: .25rem; */
+    border-radius:5px 0px 0px 5px;
     margin-top: -5px;
     height: 35px;
-  /*  outline: none;    */ 
+    outline: none;    
     -webkit-appearance: none;
     -moz-appearance: none;
 }
