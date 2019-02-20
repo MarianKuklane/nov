@@ -229,7 +229,10 @@ li a {
     border-radius: .25rem;
     margin-top: -5px;
     height: 35px;
-  
+    background: transparent;
+    outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .targetNr{
     width: 70px;
