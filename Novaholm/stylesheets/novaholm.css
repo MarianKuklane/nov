@@ -472,6 +472,10 @@ input[type="textArea"]:focus,
     box-shadow:  0 0 8px	rgb(76,175,80);
     outline: 0 none;
     font-size:13px;
+    background: transparent;
+    outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 input[type=checkbox] {
